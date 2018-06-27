@@ -1,0 +1,27 @@
+/******************************************************************************
+Author:Bhaskar Reddy Krishnamareddypalli
+Date:27 June 2018
+*******************************************************************************/
+#include <stdio.h>
+
+int main()
+{
+    float area,cost_in_rupees, cost;
+    printf("Welcome to the carpet world\n");
+    printf("Enter the are of the house in Sq.feet to which carpet is required\n");
+    scanf("%f",&area);
+    if(area<1500)
+    {
+        cost=area*7;
+        cost_in_rupees=cost*0.6837;
+        printf("The cost of %f sq.feet carpet is Rs.%f/- only",area,cost_in_rupees);
+    }
+    if(area>=1500)
+    {
+        cost=area*5;
+        cost_in_rupees=cost*0.6837;
+        printf("The cost of %f sq.feet carpet is Rs.%f/- only",area,cost_in_rupees);
+    }
+
+    return 0;
+}
